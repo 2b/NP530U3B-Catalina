@@ -2,7 +2,9 @@
 
 ### Summary
 
-Opencore EFI folder, containing all necessary files for running macOS Catalina 10.15.4 on Samsung NP530U3B
+Opencore EFI folder, containing all necessary files for running macOS Catalina 10.15.4 on Samsung NP530U3B.
+
+Everything works except Intel Centrino Advanced-N 6230 WiFi/Bluetooth adapter (no drivers exist for macOS), but it can be easily replaced by any [compatible mini PCIe adapter](https://dortania.github.io/Wireless-Buyers-Guide/types-of-wireless-card/mpcie.html) (laptop must be disassembled for this procedure).
 
 ### BIOS pre-requirements
 
