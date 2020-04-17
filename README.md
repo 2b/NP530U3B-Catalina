@@ -1,4 +1,4 @@
-## NP530U3B | OpenCore 0.57 | macOS Catalina 10.15.4
+## NP530U3B | OpenCore 0.5.7 | macOS Catalina 10.15.4
 
 ### Summary
 
@@ -46,9 +46,9 @@ Backlight control fix found by [dioxine](https://www.tonymacx86.com/threads/guid
 remount / with write permissions and replace
 
 ```
-/System/LIbrary/Extensions/AppleBacklight.kext
-/System/LIbrary/Extensions/AppleBacklightExpert.kext
-/System/LIbrary/PrivateFrameworks/DisplayServices.framework
+/System/Library/Extensions/AppleBacklight.kext
+/System/Library/Extensions/AppleBacklightExpert.kext
+/System/Library/PrivateFrameworks/DisplayServices.framework
 ```
 
 with the ones from [macOS Sierra 10.12.3 Combo Update](https://support.apple.com/kb/DL1905) (I've extracted and uploaded them to [backlight fix](backlight%20fix) dir) and fix permissions
@@ -58,6 +58,18 @@ Still looking for a better solution.
 ### Fixing iServices
 
 If you need iMessage, FaceTime etc, follow [this manual](https://dortania.github.io/OpenCore-Desktop-Guide/post-install/iservices.html)
+
+### Disabling Hibernation
+
+> Hibernation isn't well supported on hackintoshes, and in some cases it doesn't work at all. We can mitigate this problem by configuring macOS to use standby mode which will preserve what's in memory on sleep but will not write it out to disk and power off the machine. This may help to lenghten your SSD's lifespan but at the cost of losing all your work if the laptop was in sleep mode and power ran out or when the power is so low macOS will just shutdown and not enter hibernation mode.
+
+```shell
+sudo pmset hibernatemode 0
+sudo pmset standby 0
+sudo pmset autopoweroff 0
+```
+
+[Reference](https://1revenger1.gitbook.io/laptop-guide/battery-power-management/correcting-sleep-problems#disabling-hibernation)
 
 ### Content, links and copyright
 
