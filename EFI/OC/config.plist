@@ -97,11 +97,6 @@
 				<key>AAPL00,override-no-connect</key>
 				<data>AP///////wBMowAC/////wAVAQOAHRD/LwAAoFdJmyYQSE8AAAABAQEBAQEBAQEBAQEBAQEBnhtWeFAAGDAwICUAJaUQAAAZAAAA/QAAPADZCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMw=</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>compatible</key>
-				<string>pci168c,2a</string>
-			</dict>
 		</dict>
 		<key>Block</key>
 		<dict>
