@@ -6,6 +6,8 @@ Opencore EFI folder, containing all necessary files for running macOS Catalina 1
 
 Everything works except Intel Centrino Advanced-N 6230 WiFi/Bluetooth adapter (no drivers exist for macOS), but it can be easily replaced by any [compatible half-sized mini PCIe adapter](https://dortania.github.io/Wireless-Buyers-Guide/types-of-wireless-card/mpcie.html#supported) (laptop must be disassembled for this procedure).
 
+For detailed explanation of OpenCore configuration check [OpenCore Reference Manual](https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf) and [dortania/vanilla-laptop-guide](https://github.com/dortania/vanilla-laptop-guide) ([Ivy Bridge manual](https://dortania.github.io/vanilla-laptop-guide/OpenCore/config-laptop.plist/ivy-bridge.html) could still be applied to our Sandy Bridge laptop).
+
 ### BIOS pre-requirements
 
 Set AHCI mode to Manual/Enabled and enable UEFI Boot Support
