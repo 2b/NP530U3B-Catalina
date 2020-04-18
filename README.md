@@ -14,6 +14,8 @@ To avoid kernel panic on Sandy Bridge you should disable CFG Lock. Unfortunately
 
 #### CFG Lock disable
 
+**Disclaimer**: any action you take upon the information in this manual is strictly at your own risk.
+
 For correct power management on Sandy Bridge macOS should be able to control CPU multiplier by writing to MSR register. As stated above, for this laptop there is no way to achieve it from BIOS GUI. So we have to modify UEFI image. I had Windows 10 PE thumb drive near at hand, so the job was done in Windows 10.
 
 - Download image
